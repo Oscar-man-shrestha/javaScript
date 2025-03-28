@@ -37,7 +37,7 @@
 
 
 
-// //  //add element in First
+// //// add element in First
 // // friends.unshift('Nihareeka');
 // // console.log(friends);
 

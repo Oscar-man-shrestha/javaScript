@@ -1,38 +1,58 @@
-const mark = {
-    fullName:"Mark Miller",
-    mass : 300,
-    height : 260,
+//  016 Iteration_ The for Loop
 
-    calcBmI : function(){
-     this.bmi = this.mass/this.height **2;
-     return this.bmi;
-    },
-};
+for(let rep=1;rep<=10;rep++){
+    console.log(`Lifting weights repetition ${rep} 🏋`)
+}
 
-const john = {
-    fullName:"John Smith",
-    mass : 400,
-    height : 360,
-
-    calcBmI : function(){
-     this.bmi= this.mass/this.height **2;
-     return this.bmi;
-    },
-};
-
-mark.calcBmI();
+//  017 Looping Arrays, Breaking and Continuing
 
 
-john.calcBmI();
+const oscarArray = [
+    'Oscar',
+    'Man Shrestha',
+    2037-1991,
+    'teacher',
+    ['Saimon','Sajan','Khitiz'],
+    true
+];
+
+const types = [];
+
+for(let i=0;i<oscarArray.length; i++){
 
 
+    //Reading from oscar array
+    console.log(`This is from array :${oscarArray[i]} \n and this is the data type -> ${typeof oscarArray[i]}`);
 
+    // Filling types array
+    // types[i] = typeof oscarArray[i];
+    // types.push(typeof oscarArray[i]);
+   
+}
+console.log(types);
 
-if(john.bmi>mark.bmi){
-        console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})  `)
-    }
-    else
-    {
-        console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})  `)
-    
-    }
+const years = [1991,2007,1969,2020];
+const ages = [];
+for(let i=0;i<years.length;i++){
+    ages.push(2037 - years[i]);
+}
+console.log(ages)
+
+// Continue and break 
+
+console.log('--- ONLY STRINGS ---');
+
+for(let i=0;i < oscarArray.length;i++){
+    if(typeof oscarArray[i] !== 'string') continue;
+    console.log(oscarArray[i],typeof oscarArray[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+
+for(let i=0;i < oscarArray.length;i++){
+    if(typeof oscarArray[i] !== 'string') break;
+    console.log(oscarArray[i],typeof oscarArray[i]);
+}
+
+// 018 Looping Backwards and Loops in Loops
+
