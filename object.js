@@ -114,10 +114,30 @@ const oscar ={
 
 calcAge : function(){
     this.age = 2037-this.birthYear;
+
     return this.age;
+},
+
+// checkDriverLicense : function(){
+//     if(this.hasDriversLicense){
+//         return ` he has a License`
+//     }
+//     else 
+//     {
+//         return `he don't has a License`
+//         }
+//     },
+
+//or
+
+
+getSummary : function (){
+    return `${this.firstName} is a ${this.calcAge()} -year old ${this.job}, and he has  ${this.checkDriverLicense ? 'a':'no'} driver's license. `
 }
 
 };
+console.log(oscar.getSummary())
+
 
 // Don't do this instead..
 
@@ -131,8 +151,6 @@ calcAge : function(){
 console.log(oscar.calcAge())
 console.log(oscar.age);
 console.log(oscar['calcAge']())
-
-
 
 
 
