@@ -23,6 +23,3 @@ console.log(measurementkelvin());
 
 
 
-git add .
-git commit -m "javaScript"
-git push origin main  # or your branch name
