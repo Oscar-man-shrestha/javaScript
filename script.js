@@ -72,7 +72,7 @@ for(let i=oscar.length-1;i>=0;i--){
 }
 
 
-//  Loops in Loops
+// Loops in Loops
 
 for(let exercise=1;exercise<4;exercise++){
     console.log(`---------- Starting Exercise ${exercise}`);
